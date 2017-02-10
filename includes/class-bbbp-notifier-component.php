@@ -42,7 +42,7 @@ class BBBP_Topic_Notifier_Component extends BP_Component {
 
 			$topic_id = $item_id;
 
-			$topic_link  = wp_nonce_url( add_query_arg( array( 'action' => 'bbbp_topic_mark_read', 'topic_id' => $item_id ), bbp_get_topic_url( $topic_id ) ), 'bbbp_mark_topic_' . $topic_id );
+			$topic_link  = wp_nonce_url( add_query_arg( array( 'action' => 'bbbp_topic_mark_read', 'topic_id' => $item_id ), bbp_get_topic_permalink( $topic_id ) ), 'bbbp_mark_topic_' . $topic_id );
 
 			$title_attr   = 'New Topic';
 
